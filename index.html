@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid Comparer</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+
+<script src = "https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset = "UTF-8">
+<link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+<div class = "main-container">
+<h1 class = "title">Covid Comparer</h1>
+<span class = "sub-title">compare cases, deaths, and recoveries between countries</span>
+<div class = "form">
+<div class = "form-items">
+<input type = "text" class = "country" id = "countryOne" placeholder = "Country Name" >
+<input type = "text" class = "country" id = "countryTwo" placeholder = "Country Name">
+<button class = "submit">GET DATA</button>
+</div>
+</div>
+</div>
+
+
+<div class = "data-div">
+<h1 class = "compare-title"></h1>
+<span class = "recov">Recoveries</span>
+<span class = "deaths">Deaths</span>
+<h2 class = "cases"><span class = "countryOneCases"></span> <br />
+<span class = "countryTwoCases"> </span></h2>
+<canvas id = "myChart" width = "400" height = "400"></canvas>
+<h1 class = "no-chart">I might have been too lazy to add a chart for this 😅</h1>
+</div>
+
+
+</body>
+</html>
+<script src = "app.js"></script>
